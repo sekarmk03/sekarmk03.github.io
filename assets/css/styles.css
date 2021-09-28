@@ -494,6 +494,7 @@ img {
 
 .services__content:hover {
   background-color: var(--first-color);
+  cursor: pointer;
 }
 
 .services__content:hover .services__icon {
