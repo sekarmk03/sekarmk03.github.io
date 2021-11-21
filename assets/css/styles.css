@@ -253,9 +253,9 @@ img {
   display: inline-flex;
   background-color: var(--first-color);
   color: var(--first-color-lighten);
-  font-size: 1.1rem;
+  font-size: 1rem;
   border-radius: 50%;
-  padding: .40rem;
+  padding: .50rem;
   margin: 0 var(--mb-1);
   transition: .3s;
 }
@@ -373,36 +373,40 @@ img {
   background-color: var(--first-color);
 }
 
-.skills__html {
-  width: 80%;
-}
-
-.skills__js {
+.skills__90 {
   width: 90%;
 }
 
-.skills__react {
-  width: 70%;
-}
-
-.skills__angular {
-  width: 60%;
-}
-
-.skills__php {
+.skills__80 {
   width: 80%;
 }
 
-.skills__node {
+.skills__70 {
   width: 70%;
 }
 
-.skills__firebase {
-  width: 90%;
+.skills__60 {
+  width: 60%;
 }
 
-.skills__python {
-  width: 60%;
+.skills__50 {
+  width: 50%;
+}
+
+.skills__40 {
+  width: 40%;
+}
+
+.skills__30 {
+  width: 30%;
+}
+
+.skills__20 {
+  width: 20%;
+}
+
+.skills__10 {
+  width: 10%;
 }
 
 /* ===== EDUCATION =====*/
