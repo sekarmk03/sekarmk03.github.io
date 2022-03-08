@@ -100,6 +100,10 @@ img {
   display: block;
 }
 
+.clear {
+  clear: both;
+}
+
 /*===== CLASS CSS ===== */
 .section {
   padding: 4rem 0 2rem;
@@ -161,6 +165,15 @@ img {
   align-items: center;
   background-color: var(--first-color);
   transition: .5s;
+}
+
+.nav-copy {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  margin-left: -3rem;
+  width: 100%;
+  text-align: center;
 }
 
 .nav__close {
@@ -648,7 +661,8 @@ img {
 }
 
 .footer__social {
-  margin-bottom: 3rem;
+  margin-left: 20px;
+  margin-bottom: 0;
 }
 
 .footer__link {
@@ -668,6 +682,7 @@ img {
 }
 
 .footer__copy {
+  margin: 5px;
   font-size: var(--smaller-font-size);
   color: var(--text-color);
 }
