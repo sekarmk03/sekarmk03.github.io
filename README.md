@@ -5,8 +5,8 @@ Created : September 28th 2021
 > This repository was created as a web page for the owner's portfolio so that it can be accessed via the internet.
 
 ### Preview
-<img src="preview1.png" width="49.5%">
-<img src="preview2.png" width="49.5%">
+<img src="preview1.png" width="100%">
+<img src="preview2.png" width="100%">
 
 ### Tech
 * [CSS](https://www.w3.org/Style/CSS/Overview.en.html) - is a simple mechanism for adding style (e.g., fonts, colors, spacing) to Web documents.
