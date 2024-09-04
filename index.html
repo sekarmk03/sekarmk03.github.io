@@ -21,7 +21,7 @@
     <!-- Main Container Start -->
     <div class="main-container">
         <!-- Aside Start -->
-        <div class="aside">
+        <nav class="aside">
             <div class="logo">
                 <a href="#"><span>S</span>ekar</a>
             </div>
@@ -29,25 +29,25 @@
                 <span></span>
             </div>
             <ul class="nav">
-                <li><a href="#" class="active"><i class="fa fa-home"></i> Home</a></li>
-                <li><a href="#"><i class="fa fa-user"></i> About</a></li>
-                <li><a href="#"><i class="fa fa-list"></i> Services</a></li>
-                <li><a href="#"><i class="fa fa-briefcase"></i> Portfolio</a></li>
-                <li><a href="#"><i class="fa fa-comments"></i> Contact</a></li>
+                <li><a href="#home" class="active"><i class="fa fa-home"></i> Home</a></li>
+                <li><a href="#about"><i class="fa fa-user"></i> About</a></li>
+                <li><a href="#service"><i class="fa fa-list"></i> Services</a></li>
+                <li><a href="#portfolio"><i class="fa fa-briefcase"></i> Portfolio</a></li>
+                <li><a href="#contact"><i class="fa fa-comments"></i> Contact</a></li>
             </ul>
-        </div>
+        </nav>
         <!-- Aside End -->
         <!-- Main Content Start -->
         <div class="main-content">
             <!-- Home Section Start -->
-            <section class="home section">
+            <section class="home active section" id="home">
                 <div class="container">
                     <div class="row">
                         <div class="home-info padd-15">
                             <h3 class="hello">Hello, my name is <span class="name">Sekar Madu Kusumawardani</span></h3>
                             <h3 class="my-profession">I am a <span class="typing">backend engineer</span></h3>
                             <p>I'm a web designer with extensive experience for over 10 years. My expertise is to create and website design, graphic design, and many more..</p>
-                            <a href="#contact" class="btn hire-me">Hire Me</a>
+                            <a href="#" class="btn">Download CV</a>
                         </div>
                         <div class="home-img padd-15">
                             <img src="assets/img/profile-photo.jpg" alt="profile.png">
@@ -57,7 +57,7 @@
             </section>
             <!-- Home Section End -->
             <!-- About Section Start -->
-            <section class="about section">
+            <section class="about section" id="about">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -102,8 +102,7 @@
                                     </div>
                                     <div class="row">
                                         <div class="buttons">
-                                            <a href="#" class="btn">Download CV</a>
-                                            <a href="#contact" class="btn hire-me">Hire Me</a>
+                                            <a href="#contact" data-section-index="1" class="btn hire-me">Hire Me</a>
                                         </div>
                                     </div>
                                 </div>
@@ -216,7 +215,7 @@
             </section>
             <!-- About Section End -->
             <!-- Service Section Start -->
-            <section class="service section">
+            <section class="service section" id="service">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -295,7 +294,7 @@
             </section>
             <!-- Service Section End -->
             <!-- Portfolio Section Start -->
-            <section class="portfolio section">
+            <section class="portfolio section" id="portfolio">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -367,7 +366,7 @@
             </section>
             <!-- Portfolio Section End -->
             <!-- Contact Section Start -->
-            <section class="contact section">
+            <section class="contact section" id="contact">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -465,6 +464,7 @@
     </div>
     <!-- Style Switcher End -->
     <!-- JS Files -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js" referrerpolicy="no-referrer"></script>
     <script src="assets/js/script.js"></script>
     <script src="assets/js/style-switcher.js"></script>
 </body>
