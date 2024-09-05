@@ -40,6 +40,10 @@ ul {
     list-style: none;
 }
 
+u {
+    text-decoration: underline;
+}
+
 .section {
     background: var(--bg-black-900);
     min-height: 100vh;
@@ -392,7 +396,7 @@ h3.my-profession {
     border-bottom: 10px solid var(--skin-color);
     border-right: 10px solid var(--skin-color);
     right: 0;
-    bottom: 70px;
+    bottom: 50px;
 }
 
 .home-img::before {
@@ -419,8 +423,8 @@ h3.my-profession {
 }
 
 .about .about-content .about-text {
-    flex: 0 0 100%;
-    max-width: 100%;
+    flex: 0 0 50%;
+    max-width: 50%;
 }
 
 .about .about-content .about-text h3 {
@@ -438,6 +442,21 @@ h3.my-profession {
     font-size: 16px;
     line-height: 25px;
     color: var(--text-black-700);
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.about .about-content .about-info {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.about .about-content .about-info .info-item p {
+    font-weight: 600;
+    padding: 10px 0;
+    font-size: 16px;
+    color: var(--text-black-900);
+    border-bottom: 1px solid var(--bg-black-50);
 }
 
 .about .about-content .personal-info {
