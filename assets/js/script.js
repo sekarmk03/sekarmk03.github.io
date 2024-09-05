@@ -1,6 +1,6 @@
 // typing animation
 var typed = new Typed('.typing', {
-    strings: ["Developer", "Designer", "Freelancer", "Photographer"],
+    strings: ["Backend Developer", "Freelancer", "Web Developer", "System Designer"],
     typeSpeed: 100,
     backSpeed: 60,
     loop: true
@@ -69,7 +69,7 @@ document.querySelector(".hire-me").addEventListener("click", function() {
     
     showSection(this);
     updateNav(this);
-    
+
     removeBackSection();
     addBackSection(sectionIndex);
 });

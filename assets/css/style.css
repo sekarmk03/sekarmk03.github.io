@@ -322,7 +322,7 @@ h3.hello {
 
 h3.hello span {
     font-family: 'Clicker Script', cursive;
-    font-size: 30px;
+    font-size: 36px;
     font-weight: 700;
     color: var(--skin-color);
 }
@@ -337,34 +337,37 @@ h3.my-profession {
 }
 
 .home-info p {
-    margin-bottom: 70px;
+    margin-bottom: 40px;
     font-size: 20px;
+    text-align: justify;
     color: var(--text-black-700);
 }
 
 .home .home-img {
-    flex: 0 0 40%;
-    max-width: 40%;
+    flex: 0 0 30%;
+    max-width: 30%;
     text-align: center;
     position: relative;
+    top: 60px;
+    left: 20px;
 }
 
 .home-img::after {
     content: '';
     position: absolute;
-    height: 80px;
-    width: 80px;
+    height: 60px;
+    width: 60px;
     border-bottom: 10px solid var(--skin-color);
     border-right: 10px solid var(--skin-color);
-    right: 20px;
-    bottom: -40px;
+    right: 0;
+    bottom: 70px;
 }
 
 .home-img::before {
     content: '';
     position: absolute;
-    height: 80px;
-    width: 80px;
+    height: 60px;
+    width: 60px;
     border-top: 10px solid var(--skin-color);
     border-left: 10px solid var(--skin-color);
     left: 0;
@@ -374,7 +377,7 @@ h3.my-profession {
 .home .home-img img {
     margin: auto;
     border-radius: 5px;
-    height: 400px;
+    height: 300px;
 }
 
 /* About */
