@@ -423,8 +423,8 @@ h3.my-profession {
 }
 
 .about .about-content .about-text {
-    flex: 0 0 50%;
-    max-width: 50%;
+    flex: 0 0 60%;
+    max-width: 60%;
 }
 
 .about .about-content .about-text h3 {
@@ -446,17 +446,39 @@ h3.my-profession {
     margin-bottom: 20px;
 }
 
+.about .about-content .about-text .buttons {
+    margin-top: 40px;
+}
+
 .about .about-content .about-info {
-    flex: 0 0 50%;
-    max-width: 50%;
+    flex: 0 0 40%;
+    max-width: 40%;
+}
+
+.about .about-content .about-info .info-item {
+    padding: 10px 0;
+    border-bottom: 1px solid var(--bg-black-50);
+    display: flex;
+}
+
+.about .about-content .about-info .info-item .info-item-icon {
+    flex: 0 0 10%;
+    max-width: 10%;
+    text-align: center;
+    font-size: 20px;
+    color: var(--skin-color);
 }
 
 .about .about-content .about-info .info-item p {
     font-weight: 600;
-    padding: 10px 0;
-    font-size: 16px;
+    font-size: 14px;
     color: var(--text-black-900);
-    border-bottom: 1px solid var(--bg-black-50);
+}
+
+.about .about-content .about-info .info-item p:last-child {
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--text-black-700);
 }
 
 .about .about-content .personal-info {
@@ -485,9 +507,7 @@ h3.my-profession {
     display: inline-block;
 }
 
-.about .about-content .personal-info .buttons {
-    margin-top: 30px;
-}
+
 
 .about .about-content .personal-info .buttons .btn {
     margin-top: 10px;
