@@ -545,17 +545,105 @@ h3.my-profession {
 
 h3.title {
     font-size: 24px;
-    margin-bottom: 30px;
     font-weight: 700;
     color: var(--text-black-900);
+    margin-bottom: 30px;
 }
 
-.timeline-box {
-    flex: 0 0 100%;
+/* =========================== Resume =========================== */
+.resume .container {
+    padding-bottom: 40px;
+}
+
+.education {
+    flex: 100%;
     max-width: 100%;
+    margin-bottom: 50px;
 }
 
-.timeline {
+.education h3.title {
+    text-align: center;
+}
+
+.bd-grid {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.education-wrap-item {
+    text-align: end;
+}
+
+.education .row {
+    row-gap: 2rem;
+}
+
+.education-item {
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+}
+
+.education-year, .education-subject {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.education-subject {
+    text-align: start !important;
+}
+
+.education-place, .education-grade {
+    display: block;
+    font-size: 16px;
+}
+
+.education-year, .education-place {
+    text-align: right;
+}
+
+.education-timeline {
+    padding: 0 1rem;
+    justify-self: center;
+}
+
+.education-timeline-dot {
+    position: relative;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-color: var(--skin-color);
+    border-radius: 50%;
+}
+
+.education-timeline-dot::before {
+    content: '';
+    position: absolute;
+    transform: translate(-4px, -4px);
+    width: 20px;
+    height: 20px;
+    border: 1px solid var(--skin-color);
+    border-radius: 50%;
+}
+
+.education-timeline-line {
+    display: block;
+    height: 90%;
+    width: 2px;
+    background-color: var(--skin-color);
+    transform: translate(5px, -4px);
+}
+
+
+
+.education2 {
+    flex: 100%;
+    max-width: 100%;
+    margin-bottom: 50px;
+}
+
+.education2 .row {
     background-color: var(--bg-black-100);
     padding: 30px 15px;
     border: 1px solid var(--bg-black-50);
@@ -564,17 +652,101 @@ h3.title {
     position: relative;
 }
 
-.timeline-item {
+.bd-grid {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.education2 .row {
+    row-gap: 2rem;
+}
+
+.education2-item {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    color: var(--text-black-700);
+}
+
+.education2-item p {
+    font-size: 16px;
+    line-height: 25px;
+    color: var(--text-black-700);
+    font-weight: 400;
+}
+
+.education2-subject {
+    font-size: 20px;
+}
+
+.education2-subject + h4 {
+    margin-bottom: 10px;
+}
+
+.education2-grade {
+    display: block;
+    font-size: 16px;
+}
+
+.education2-timeline {
+    padding: 0 1rem;
+    justify-self: center;
+}
+
+.education2-timeline-dot {
+    position: relative;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-color: var(--skin-color);
+    border-radius: 50%;
+}
+
+.education2-timeline-dot::before {
+    content: '';
+    position: absolute;
+    transform: translate(-4px, -4px);
+    width: 20px;
+    height: 20px;
+    border: 1px solid var(--skin-color);
+    border-radius: 50%;
+}
+
+.education2-timeline-line {
+    display: block;
+    height: 90%;
+    width: 2px;
+    background-color: var(--skin-color);
+    transform: translate(5px, -4px);
+}
+
+
+.experience-timeline-box {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.experience-timeline {
+    background-color: var(--bg-black-100);
+    padding: 30px 15px;
+    border: 1px solid var(--bg-black-50);
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+}
+
+.experience-timeline-item {
     position: relative;
     padding-left: 37px;
     padding-bottom: 50px;
 }
 
-.timeline-item:last-child {
+.experience-timeline-item:last-child {
     padding-bottom: 0;
 }
 
-.timeline-item::before {
+.experience-timeline-item::before {
     content: '';
     width: 1px;
     position: absolute;
@@ -584,7 +756,7 @@ h3.title {
     background-color: var(--skin-color);
 }
 
-.circle-dot {
+.experience-timeline-circle-dot {
     position: absolute;
     left: 0;
     top: 0;
@@ -594,35 +766,30 @@ h3.title {
     background-color: var(--skin-color);
 }
 
-.timeline-date {
+.experience-timeline-date {
     font-weight: 400;
     font-size: 14px;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
     color: var(--text-black-700);
 }
 
-.timeline-date .fa {
+.experience-timeline-date .fa {
     margin-right: 5px;
 }
 
-.timeline-title {
+.experience-timeline-title {
     font-weight: 700;
     font-size: 18px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     text-transform: capitalize;
     color: var(--text-black-900);
 }
 
-.timeline-text {
+.experience-timeline-text {
     line-height: 25px;
     font-size: 16px;
     text-align: justify;
     color: var(--text-black-700);
-}
-
-/* =========================== Resume =========================== */
-.resume .container {
-    padding-bottom: 40px;
 }
 
 .service-item {
