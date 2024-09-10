@@ -307,7 +307,8 @@ u {
     margin-right: 15px;
 }
 
-/* home */
+
+/* =========================== home =========================== */
 .home {
     min-height: 100vh;
     display: flex;
@@ -356,11 +357,6 @@ h3.my-profession {
     height: 48px;
 }
 
-/* .home-socials { */
-    /* display: flex; */
-    /* margin-bottom: 20px; */
-/* } */
-
 .home-social-link {
     display: inline-flex;
     background-color: var(--skin-color);
@@ -380,7 +376,7 @@ h3.my-profession {
     transform: scale(1.1);
 }
 
-.home .home-img {
+.home-img {
     flex: 0 0 30%;
     max-width: 30%;
     text-align: center;
@@ -411,35 +407,36 @@ h3.my-profession {
     top: -40px;
 }
 
-.home .home-img img {
+.home-img img {
     margin: auto;
     border-radius: 5px;
     height: 300px;
 }
 
-/* About */
-.about .about-content {
+
+/* =========================== About =========================== */
+.about-content {
     flex: 0 0 100%;
     max-width: 100%;
 }
 
-.about .about-content .about-text {
+.about-text {
     flex: 0 0 60%;
     max-width: 60%;
 }
 
-.about .about-content .about-text h3 {
+.about-text h3 {
     font-size: 24px;
     margin-bottom: 15px;
     font-weight: 700;
     color: var(--text-black-900);
 }
 
-.about .about-content .about-text h3 span {
+.about-text h3 span {
     color: var(--skin-color);
 }
 
-.about .about-content .about-text p {
+.about-text p {
     font-size: 16px;
     line-height: 25px;
     color: var(--text-black-700);
@@ -447,22 +444,22 @@ h3.my-profession {
     margin-bottom: 20px;
 }
 
-.about .about-content .about-text .buttons {
+.about-text .buttons {
     margin-top: 40px;
 }
 
-.about .about-content .about-info {
+.about-info {
     flex: 0 0 40%;
     max-width: 40%;
 }
 
-.about .about-content .about-info .info-item {
+.about-info .info-item {
     padding: 10px 0;
     border-bottom: 1px solid var(--bg-black-50);
     display: flex;
 }
 
-.about .about-content .about-info .info-item .info-item-icon {
+.about-info .info-item .info-item-icon {
     flex: 0 0 10%;
     max-width: 10%;
     text-align: center;
@@ -470,80 +467,95 @@ h3.my-profession {
     color: var(--skin-color);
 }
 
-.about .about-content .about-info .info-item p {
+.about-info .info-item p {
     font-weight: 600;
     font-size: 14px;
     color: var(--text-black-900);
 }
 
-.about .about-content .about-info .info-item p:last-child,
-.about .about-content .about-info .info-item p a {
+.about-info .info-item p:last-child,
+.about-info .info-item p a {
     font-weight: 400;
     font-size: 16px;
     color: var(--text-black-700);
 }
 
-.about .about-content .skills {
+.skills {
     flex: 0 0 100%;
     max-width: 100%;
     margin-top: 30px;
 }
 
-.about .about-content .skills h3 {
+.skills h3 {
     text-align: center;
 }
 
-.about .about-content .skills .row {
+.skills .row {
     justify-content: center;
     align-items: center;
     justify-content: space-between;
     display: flex;
 }
 
-.about .about-content .skills .skill-item {
-    flex: 0 0 18%;
-    max-width: 18%;
-    height: 80px;
-    background: var(--bg-black-100);
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Makes it responsive */
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+}
+
+.skill-card {
     display: flex;
     align-items: center;
-    border: 1px solid var(--bg-black-50);
-    border-radius: 10px;
-    margin: 5px;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 150px;
+    height: 100px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
 }
 
-.about .about-content .skills .skill-item .skill-item-logo {
-    width: 80px;
-    margin: 5px 10px;
+.skill-card img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
 }
 
-.about .about-content .skills .skill-item .skill-item-name {
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 22px;
-    color: var(--text-black-700);
+.skill-card p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
 }
 
-.about .about-content .education,
-.about .about-content .experience {
+.skill-card:hover {
+    transform: translateY(-5px);
+}
+
+.education,
+.experience {
     flex: 0 0 50%;
     max-width: 50%;
     margin-top: 30px;
 }
 
-.about .about-content h3.title {
+h3.title {
     font-size: 24px;
     margin-bottom: 30px;
     font-weight: 700;
     color: var(--text-black-900);
 }
 
-.about .about-content .timeline-box {
+.timeline-box {
     flex: 0 0 100%;
     max-width: 100%;
 }
 
-.about .about-content .timeline {
+.timeline {
     background-color: var(--bg-black-100);
     padding: 30px 15px;
     border: 1px solid var(--bg-black-50);
@@ -552,17 +564,17 @@ h3.my-profession {
     position: relative;
 }
 
-.about .about-content .timeline .timeline-item {
+.timeline-item {
     position: relative;
     padding-left: 37px;
     padding-bottom: 50px;
 }
 
-.about .about-content .timeline .timeline-item:last-child {
+.timeline-item:last-child {
     padding-bottom: 0;
 }
 
-.about .about-content .timeline .timeline-item::before {
+.timeline-item::before {
     content: '';
     width: 1px;
     position: absolute;
@@ -572,7 +584,7 @@ h3.my-profession {
     background-color: var(--skin-color);
 }
 
-.about .about-content .timeline .circle-dot {
+.circle-dot {
     position: absolute;
     left: 0;
     top: 0;
@@ -582,18 +594,18 @@ h3.my-profession {
     background-color: var(--skin-color);
 }
 
-.about .about-content .timeline .timeline-date {
+.timeline-date {
     font-weight: 400;
     font-size: 14px;
     margin-bottom: 12px;
     color: var(--text-black-700);
 }
 
-.about .about-content .timeline .timeline-date .fa {
+.timeline-date .fa {
     margin-right: 5px;
 }
 
-.about .about-content .timeline .timeline-title {
+.timeline-title {
     font-weight: 700;
     font-size: 18px;
     margin-bottom: 15px;
@@ -601,25 +613,25 @@ h3.my-profession {
     color: var(--text-black-900);
 }
 
-.about .about-content .timeline .timeline-text {
+.timeline-text {
     line-height: 25px;
     font-size: 16px;
     text-align: justify;
     color: var(--text-black-700);
 }
 
-/* Services */
-.service .container {
+/* =========================== Resume =========================== */
+.resume .container {
     padding-bottom: 40px;
 }
 
-.service .service-item {
+.service-item {
     margin-bottom: 30px;
     flex: 0 0 33.333333%;
     max-width: 33.333333%;
 }
 
-.service .service-item .service-item-inner {
+.service-item-inner {
     background-color: var(--bg-black-100);
     border: 1px solid var(--bg-black-50);
     border-radius: 10px;
@@ -628,12 +640,12 @@ h3.my-profession {
     transition: all 0.3s ease;
 }
 
-.service .service-item .service-item-inner:hover {
+.service-item-inner:hover {
     box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
     cursor: pointer;
 }
 
-.service .service-item .service-item-inner .icon {
+.service-item-inner .icon {
     height: 60px;
     width: 60px;
     border-radius: 50%;
@@ -643,23 +655,23 @@ h3.my-profession {
     transition: all 0.3s ease;
 }
 
-.service .service-item .service-item-inner .icon .fa {
+.service-item-inner .icon .fa {
     font-size: 40px;
     line-height: 60px;
     color: var(--skin-color);
     transition: all 0.3s ease;
 }
 
-.service .service-item .service-item-inner:hover .icon {
+.service-item-inner:hover .icon {
     background: var(--skin-color);
 }
 
-.service .service-item .service-item-inner:hover .icon .fa {
+.service-item-inner:hover .icon .fa {
     font-size: 25px;
     color: var(--bg-black-100);
 }
 
-.service .service-item .service-item-inner h4 {
+.service-item-inner h4 {
     font-size: 18px;
     margin-bottom: 15px;
     color: var(--text-black-900);
@@ -667,47 +679,47 @@ h3.my-profession {
     text-transform: capitalize;
 }
 
-.service .service-item .service-item-inner p {
+.service-item-inner p {
     font-size: 16px;
     color: var(--text-black-700);
     line-height: 25px;
 }
 
-/* Portfolio */
+/* =========================== Portfolio =========================== */
 .portfolio .container {
     padding-bottom: 40px;
 }
 
-.portfolio .portfolio-heading {
+.portfolio-heading {
     flex: 0 0 100%;
     max-width: 100%;
     margin-bottom: 40px;
 }
 
-.portfolio .portfolio-heading h2 {
+.portfolio-heading h2 {
     color: var(--text-black-900);
     font-weight: 500;
 }
 
-.portfolio .portfolio-item {
+.portfolio-item {
     flex: 0 0 33.333333%;
     max-width: 33.333333%;
     margin-bottom: 30px;
 }
 
-.portfolio .portfolio-item-inner {
+.portfolio-item-inner {
     border: 6px solid var(--bg-black-100);
     border-radius: 10px;
     overflow: hidden;
     cursor: pointer;
 }
 
-.portfolio .portfolio-item-inner .portfolio-img img {
+.portfolio-img img {
     width: 100%;
     display: block;
 }
 
-/* Contact */
+/* =========================== Contact =========================== */
 .contact-title {
     color: var(--skin-color);
     text-align: center;
@@ -722,23 +734,23 @@ h3.my-profession {
     margin-bottom: 60px;
 }
 
-.contact .contact-info-item {
+.contact-info-item {
     flex: 0 0 25%;
     max-width: 25%;
     text-align: center;
     margin-bottom: 60px;
 }
 
-.contact .contact-info-item .icon {
+.contact-info-item .icon {
     display: inline-block;
 }
 
-.contact .contact-info-item .icon .fa {
+.contact-info-item .icon .fa {
     font-size: 25px;
     color: var(--skin-color);
 }
 
-.contact .contact-info-item h4 {
+.contact-info-item h4 {
     font-size: 18px;
     font-weight: 700;
     color: var(--text-black-900);
@@ -746,34 +758,34 @@ h3.my-profession {
     margin: 15px 0 5px;
 }
 
-.contact .contact-info-item p {
+.contact-info-item p {
     font-size: 16px;
     line-height: 25px;
     color: var(--text-black-700);
     font-weight: 400;
 }
 
-.contact .contact-form {
+.contact-form {
     flex: 0 0 100%;
     max-width: 100%;
 }
 
-.contact .contact-form .col-6 {
+.contact-form .col-6 {
     flex: 0 0 50%;
     max-width: 50%;
     
 }
 
-.contact .contact-form .col-12 {
+.contact-form .col-12 {
     flex: 0 0 100%;
     max-width: 100%;
 }
 
-.contact .contact-form .form-item {
+.form-item {
     margin-bottom: 30px;
 }
 
-.contact .contact-form .form-item .form-control {
+.form-control {
     width: 100%;
     height: 50px;
     border-radius: 25px;
@@ -785,11 +797,11 @@ h3.my-profession {
     transition: all 0.3s ease;
 }
 
-.contact .contact-form .form-item .form-control:focus {
+.form-control:focus {
     box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
 }
 
-.contact .contact-form .form-item textarea.form-control {
+textarea.form-control {
     height: 140px;
 }
 
@@ -799,6 +811,7 @@ h3.my-profession {
     cursor: pointer;
 }
 
+/* =========================== Responsive Design =========================== */
 @media (max-width:1199px) {
     .section .container {
         padding-top: 70px;
@@ -809,11 +822,11 @@ h3.my-profession {
     .aside.open {
         left: 0;
     }
-    .aside .nav-toggler {
+    .nav-toggler {
         display: flex;
         left: 30px;
     }
-    .aside .nav-toggler.open {
+    .nav-toggler.open {
         left: 300px;
     }
     .section {
@@ -822,44 +835,48 @@ h3.my-profession {
     .section.open {
         left: 270px;
     }
-    .about .about-content .personal-info .info-item p span {
+    .info-item p span {
         display: block;
         margin-left: 0;
     }
 }
 
 @media (max-width:991px) {
-    .contact .contact-info-item,
-    .portfolio .portfolio-item,
-    .service .service-item {
+    .contact-info-item,
+    .portfolio-item,
+    .service-item {
         flex: 0 0 50%;
         max-width: 50%;
     }
-    .home .home-info {
+    .home-info {
         flex: 0 0 100%;
         max-width: 100%;
     }
-    .home .home-img {
+    .home-img {
         display: none;
     }
 }
 
 @media (max-width:767px) {
-    .contact .contact-form .col-6,
-    .contact .contact-info-item,
-    .portfolio .portfolio-item,
-    .service .service-item,
-    .about .about-content .education,
-    .about .about-content .experience,
-    .about .about-content .skills,
-    .about .about-content .about-text,
-    .about .about-content .about-info {
+    .col-6,
+    .contact-info-item,
+    .portfolio-item,
+    .service-item,
+    .education,
+    .experience,
+    .skills,
+    .about-text,
+    .about-info {
         flex: 0 0 100%;
         max-width: 100%;
     }
 
-    .about .about-content .about-info {
+    .about-info {
         margin-top: 30px;
+    }
+
+    .skills-container {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Adjusted for smaller screens */
     }
 }
 
@@ -875,65 +892,16 @@ h3.my-profession {
         margin-left: 0;
         margin-right: 10px;
     }
-}
-
-.skills-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Makes it responsive */
-    gap: 20px;
-    padding: 20px;
-    justify-items: center;
-  }
-
-  .skill-card {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-    max-width: 150px;
-    height: 100px;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-  }
-
-  .skill-card img {
-    width: 40px;
-    height: 40px;
-    margin-bottom: 10px;
-  }
-
-  .skill-card p {
-    margin: 0;
-    font-size: 16px;
-    font-weight: bold;
-    text-align: center;
-  }
-
-  .skill-card:hover {
-    transform: translateY(-5px);
-  }
-
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .skills-container {
-      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Adjusted for smaller screens */
-    }
-  }
-
-  @media (max-width: 480px) {
     .skill-card {
-      height: 90px;
+        height: 90px;
     }
-
+  
     .skill-card img {
-      width: 30px;
-      height: 30px;
+        width: 30px;
+        height: 30px;
     }
-
+  
     .skill-card p {
-      font-size: 14px;
+        font-size: 14px;
     }
-  }
+}
