@@ -523,7 +523,7 @@ h3.my-profession {
     width: 100%;
     max-width: 150px;
     height: 100px;
-    background-color: #ffffff;
+    background-color: var(--bg-black-100);
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
@@ -542,6 +542,7 @@ h3.my-profession {
     font-size: 16px;
     font-weight: bold;
     text-align: center;
+    color: var(--text-black-700);
 }
 
 .skill-card:hover {
