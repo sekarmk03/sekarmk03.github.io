@@ -575,7 +575,7 @@ h3.title {
     flex-direction: column;
 }
 
-.education, .experience {
+.education, .experience, .community, .course {
     flex: 100%;
     max-width: 100%;
     margin-bottom: 50px;
@@ -674,6 +674,7 @@ h3.title {
 .resume-container .achievement {
     flex: 0 0 100%;
     max-width: 100%;
+    margin-bottom: 50px;
 }
 
 .resume-container .achievement .row {
@@ -687,9 +688,9 @@ h3.title {
     gap: 8px;
 }
 
-.achievement .resume-item h4 span a {
+.resume-item span a {
     color: var(--skin-color);
-    font-size: 12px;
+    font-size: 14px;
 }
 
 @media screen and (max-width: 768px) {
