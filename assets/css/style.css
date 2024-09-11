@@ -674,19 +674,22 @@ h3.title {
 .resume-container .achievement {
     flex: 0 0 100%;
     max-width: 100%;
-    background: #e8dfec;
-    flex-direction: column;
 }
 
 .resume-container .achievement .row {
-    flex: 0 0 40%;
-    max-width: 40%;
+    flex: 0 0 49%;
+    max-width: 49%;
 }
 
 .achievement-container {
     display: flex;
     flex-direction: row;
     gap: 8px;
+}
+
+.achievement .resume-item h4 span a {
+    color: var(--skin-color);
+    font-size: 12px;
 }
 
 @media screen and (max-width: 768px) {
