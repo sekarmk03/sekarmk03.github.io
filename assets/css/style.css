@@ -709,33 +709,91 @@ h3.title {
     padding-bottom: 40px;
 }
 
-.portfolio-heading {
+.project {
     flex: 0 0 100%;
     max-width: 100%;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
-.portfolio-heading h2 {
-    color: var(--text-black-900);
-    font-weight: 500;
-}
-
-.portfolio-item {
-    flex: 0 0 33.333333%;
-    max-width: 33.333333%;
+.project .row {
     margin-bottom: 30px;
 }
 
-.portfolio-item-inner {
+.project-img {
+    width: 30%;
     border: 6px solid var(--bg-black-100);
     border-radius: 10px;
     overflow: hidden;
-    cursor: pointer;
 }
 
-.portfolio-img img {
+.project-img img {
     width: 100%;
+    height: 100%;
     display: block;
+    object-fit: cover;
+}
+
+.project-content {
+    width: 70%;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-pill {
+    padding: 0 10px;
+    border-radius: 50px;
+    display: inline;
+    white-space: nowrap;
+    border: 1px solid var(--skin-color);
+    background: var(--bg-black-100);
+}
+
+.project-pill span {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--skin-color);
+}
+
+.project-name {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--text-black-900);
+    margin: 7px 0 5px;
+}
+
+.project-desc {
+    margin-bottom: 5px;
+}
+
+.project-tech {
+    margin-bottom: 7px;
+}
+
+.project-desc,
+.project-tech {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--text-black-700);
+    text-align: justify;
+}
+
+.project-tech span {
+    font-weight: 600;
+}
+
+.project-buttons .btn {
+    padding: 5px 15px;
+    font-size: 16px;
+}
+
+.project-buttons .btn-border {
+    border: 2px solid var(--skin-color);
+    padding: 3px 13px;
+    background: var(--bg-black-100);
+    color: var(--skin-color);
+    margin-left: 5px;
 }
 
 /* =========================== Contact =========================== */
