@@ -942,8 +942,8 @@ textarea.form-control {
     .home-img {
         display: none;
     }
-    .home-buttons {
-        flex-direction: column;
+    .home-buttons{
+        flex-direction: column-reverse;
         align-items: center;
         gap: 20px;
     }
@@ -968,16 +968,13 @@ textarea.form-control {
 }
 
 @media (max-width:480px) {
-    .home-buttons{
-        flex-direction: column-reverse;
-    }
     .home-buttons .btn {
         width: 178px;
         margin-top: 20px;
     }
     .home-social-link {
         margin-left: 0;
-        margin-right: 10px;
+        margin-right: 5px;
     }
     .skill-card {
         height: 90px;
