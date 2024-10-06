@@ -715,7 +715,8 @@ h3.title {
 }
 
 .project .row {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
 }
 
 .project-img {
@@ -974,6 +975,26 @@ textarea.form-control {
     .skills-container {
         grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Adjusted for smaller screens */
     }
+    .project .row {
+        flex-direction: column;
+        gap: 20px;
+        border-bottom: 1px solid var(--bg-black-50);
+    }
+    .project-img {
+        width: 100%;
+    }
+    .project-content {
+        width: 100%;
+        padding-left: 0;
+    }
+    .project-tech {
+        margin-bottom: 0;
+    }
+    .project-buttons .btn {
+        margin-top: 10px;
+        margin-left: 0;
+    }
+
 }
 
 @media (max-width:480px) {
