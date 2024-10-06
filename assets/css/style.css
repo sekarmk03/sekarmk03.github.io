@@ -228,12 +228,11 @@ u {
     width: 45px;
     border: 1px solid var(--bg-black-50);
     cursor: pointer;
-    position: fixed;
+    /* position: fixed; */
     left: 300px;
     top: 20px;
     border-radius: 5px;
     background: var(--bg-black-100);
-    /* display: none; */
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
@@ -900,6 +899,7 @@ textarea.form-control {
         left: 0;
     }
     .nav-toggler {
+        position: fixed;
         display: flex;
         left: 30px;
     }
@@ -929,12 +929,24 @@ textarea.form-control {
         flex: 0 0 100%;
         max-width: 100%;
     }
-    .home-img {
-        display: none;
-    }
 }
 
 @media (max-width:767px) {
+    .home .container .row {
+        flex-direction: column;
+    }
+    .home-info {
+        flex: 0 0 100%;
+        max-width: 100% !important;
+    }
+    .home-img {
+        display: none;
+    }
+    .home-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
     .col-6,
     .contact-info-item,
     .portfolio-item,
@@ -947,11 +959,9 @@ textarea.form-control {
         flex: 0 0 100%;
         max-width: 100%;
     }
-
     .about-info {
         margin-top: 30px;
     }
-
     .skills-container {
         grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Adjusted for smaller screens */
     }
