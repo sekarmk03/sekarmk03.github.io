@@ -932,6 +932,12 @@ textarea.form-control {
 }
 
 @media (max-width:767px) {
+    .aside {
+        width: 200px;
+    }
+    .section.open {
+        left: 200px;
+    }
     .home .container .row {
         flex-direction: column;
     }
