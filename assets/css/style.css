@@ -938,6 +938,9 @@ textarea.form-control {
     .section.open {
         left: 200px;
     }
+    .nav-toggler.open {
+        left: 230px;
+    }
     .home .container .row {
         flex-direction: column;
     }
